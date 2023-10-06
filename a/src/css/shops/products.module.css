@@ -1,0 +1,87 @@
+/* .Products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+.item {
+    width: 30%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.item {
+    position: relative;
+      
+}
+
+
+.item img {
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.item:hover .quickView {
+    display: block;
+    animation: overDown ease 0.5s;
+}
+
+.quickView {
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+    display: none;
+}
+
+.quickView button {
+    border-radius: 20px;
+    background-color: #fff;
+    min-width: 139px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Poppins-Regular;
+    color: #333;
+    /* transform: translateY(100%); */
+}
+
+
+/* buy detail san pham */
+.buyProductFake {
+    display: none;
+}
+
+.buyProduct {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(136, 128, 128, 0.8);
+}
+
+@keyframes overDown {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width : 700px) {
+    .item {
+        width: 40%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .item img {
+        max-width:100%;
+        max-height: 100%;
+    }
+}

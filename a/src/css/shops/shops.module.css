@@ -1,0 +1,35 @@
+.products{
+    margin-top: 10px;
+    border-top: 1px solid;
+}
+
+.products_some{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+/* Buy product */
+.buyProductFake {
+    display: none;
+}
+
+.buyProduct {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(136, 128, 128, 0.8);
+}
+
+
+@media(max-width : 700px) {
+    .products_some{
+        justify-content: space-around;
+
+    }
+}

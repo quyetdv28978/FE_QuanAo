@@ -1,0 +1,15 @@
+{
+  "name": "fe_quan_ao",
+  "version": "1.0.0",
+  "description": "FE_Quan_Ao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "react-owl-carousel": "^2.3.3"
+  }
+}

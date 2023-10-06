@@ -1,0 +1,247 @@
+.content_header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.banner_1 {
+    background-image: url("../baner/banner-01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.banner_2 {
+    background-image: url("../baner/banner-02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.content_header div {
+    width: 400px;
+    height: 271px;
+    border: 1px ridge #E6dbdb;
+
+}
+
+.banner_1 .bt_1 {
+    position: relative;
+    top: 80%;
+    left: 10%;
+    display: none;
+}
+
+
+
+.banner_1:hover .bt_1 {
+    width: 23%;
+    display: block;
+    border-bottom: 2px solid #fff;
+    animation: overDown ease 0.6s;
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.banner_2:hover .bt_2 {
+    width: 23%;
+    display: block;
+    border-bottom: 2px solid #fff;
+    animation: overDown ease 0.6s;
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner_1:hover {
+    cursor: pointer;
+
+    background-image: linear-gradient(0, rgba(103, 117, 214, 0.5), rgba(103, 117, 214, 0.5)),
+        url("../baner/banner-01.jpg");
+}
+
+.banner_2:hover {
+    background-image: linear-gradient(0, rgba(103, 117, 214, 0.5), rgba(103, 117, 214, 0.5)),
+        url("../baner/banner-02.jpg");
+}
+
+.banner_2 .bt_2 {
+    position: relative;
+    top: 75%;
+    left: 10%;
+    display: none;
+
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.content_header a:hover {
+    text-decoration: underline;
+    /* transition: linear 2ms; */
+}
+
+/* Products */
+.Products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+.item {
+    position: relative;
+}
+
+/* .itemDetail p{
+    margin-left: 0;
+} */
+
+
+.item:hover .quickView {
+    display: block;
+    animation: overDown ease 0.5s;
+}
+
+.quickView {
+    position: absolute;
+    bottom: 35%;
+    left: 25%;
+    display: none;
+}
+
+.quickView button {
+    border-radius: 20px;
+    background-color: #fff;
+    min-width: 139px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Poppins-Regular;
+    color: #333;
+    /* transform: translateY(100%); */
+}
+
+
+/* Buy product */
+.buyProductFake {
+    display: none;
+}
+
+.buyProduct {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(136, 128, 128, 0.8);
+}
+
+.swal-modal {
+    z-index: 1001;
+}
+
+
+@keyframes overDown {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width : 1200px) {
+    .quickView {
+        left: 20%;
+    }
+}
+
+@media(max-width : 1000px) {
+    .quickView {
+        left: 15%;
+    }
+}
+
+@media(max-width : 860px) {
+    .quickView {
+        left: 10%;
+
+    }
+}
+
+@media(max-width : 780px) {
+    .quickView {
+        left: 5%;
+        top: 40%;
+    }
+
+}
+
+@media(max-width : 750px) {
+    .quickView {
+        left: 37%;
+        top: 80%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+}
+
+@media(max-width : 400px) {
+    .Products {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .quickView {
+        top: 60%;
+        left: 30%;
+    }
+
+    .item {
+        width: 100%;
+        height: 100%;
+        /* border: 1px ridge #E6dbdb; */
+        margin-bottom: 20px;
+    }
+
+    .banner_1,
+    .banner_2 {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .banner_1 img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .banner_2 img {
+        width: 100%;
+        max-height: 250px;
+    }
+}
