@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FE_QuanAo/static/css/main.76a2b46a.css",
-    "main.js": "/FE_QuanAo/static/js/main.b2aaee0f.js",
+    "main.js": "/FE_QuanAo/static/js/main.19cb4493.js",
     "static/js/787.037d72d9.chunk.js": "/FE_QuanAo/static/js/787.037d72d9.chunk.js",
     "static/media/banner-02.jpg": "/FE_QuanAo/static/media/banner-02.33ebbef246b466f0fec7.jpg",
     "static/media/slide-02.jpg": "/FE_QuanAo/static/media/slide-02.42a378abf9f1d35cc2d9.jpg",
@@ -11,11 +11,11 @@
     "static/media/te.jpg": "/FE_QuanAo/static/media/te.5d71fe49bc95681f4a2c.jpg",
     "index.html": "/FE_QuanAo/index.html",
     "main.76a2b46a.css.map": "/FE_QuanAo/static/css/main.76a2b46a.css.map",
-    "main.b2aaee0f.js.map": "/FE_QuanAo/static/js/main.b2aaee0f.js.map",
+    "main.19cb4493.js.map": "/FE_QuanAo/static/js/main.19cb4493.js.map",
     "787.037d72d9.chunk.js.map": "/FE_QuanAo/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76a2b46a.css",
-    "static/js/main.b2aaee0f.js"
+    "static/js/main.19cb4493.js"
   ]
 }
