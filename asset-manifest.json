@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/FE_QuanAo/static/css/main.76a2b46a.css",
-    "main.js": "/FE_QuanAo/static/js/main.22f974bc.js",
-    "static/js/787.037d72d9.chunk.js": "/FE_QuanAo/static/js/787.037d72d9.chunk.js",
-    "static/media/banner-02.jpg": "/FE_QuanAo/static/media/banner-02.33ebbef246b466f0fec7.jpg",
-    "static/media/slide-02.jpg": "/FE_QuanAo/static/media/slide-02.42a378abf9f1d35cc2d9.jpg",
-    "static/media/slide-01.jpg": "/FE_QuanAo/static/media/slide-01.b399dbdeb89f7fe820fc.jpg",
-    "static/media/slide-03.jpg": "/FE_QuanAo/static/media/slide-03.522dd034a589dc7cbb68.jpg",
-    "static/media/banner-01.jpg": "/FE_QuanAo/static/media/banner-01.8f255cb0b239e4f9eadc.jpg",
-    "static/media/te.jpg": "/FE_QuanAo/static/media/te.5d71fe49bc95681f4a2c.jpg",
-    "index.html": "/FE_QuanAo/index.html",
-    "main.76a2b46a.css.map": "/FE_QuanAo/static/css/main.76a2b46a.css.map",
-    "main.22f974bc.js.map": "/FE_QuanAo/static/js/main.22f974bc.js.map",
-    "787.037d72d9.chunk.js.map": "/FE_QuanAo/static/js/787.037d72d9.chunk.js.map"
+    "main.css": "/FE_QuanAo/home/static/css/main.612cf003.css",
+    "main.js": "/FE_QuanAo/home/static/js/main.7b7217f9.js",
+    "static/js/787.037d72d9.chunk.js": "/FE_QuanAo/home/static/js/787.037d72d9.chunk.js",
+    "static/media/banner-02.jpg": "/FE_QuanAo/home/static/media/banner-02.33ebbef246b466f0fec7.jpg",
+    "static/media/slide-02.jpg": "/FE_QuanAo/home/static/media/slide-02.42a378abf9f1d35cc2d9.jpg",
+    "static/media/slide-01.jpg": "/FE_QuanAo/home/static/media/slide-01.b399dbdeb89f7fe820fc.jpg",
+    "static/media/slide-03.jpg": "/FE_QuanAo/home/static/media/slide-03.522dd034a589dc7cbb68.jpg",
+    "static/media/banner-01.jpg": "/FE_QuanAo/home/static/media/banner-01.8f255cb0b239e4f9eadc.jpg",
+    "static/media/te.jpg": "/FE_QuanAo/home/static/media/te.5d71fe49bc95681f4a2c.jpg",
+    "index.html": "/FE_QuanAo/home/index.html",
+    "main.612cf003.css.map": "/FE_QuanAo/home/static/css/main.612cf003.css.map",
+    "main.7b7217f9.js.map": "/FE_QuanAo/home/static/js/main.7b7217f9.js.map",
+    "787.037d72d9.chunk.js.map": "/FE_QuanAo/home/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76a2b46a.css",
-    "static/js/main.22f974bc.js"
+    "static/css/main.612cf003.css",
+    "static/js/main.7b7217f9.js"
   ]
 }
