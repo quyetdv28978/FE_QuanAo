@@ -8,7 +8,6 @@ import Context from './context/context';
 import stateContext from './context/useState';
 import stateContextProduct from './context/useStateProduct';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const context = Context;
 root.render(
@@ -17,7 +16,6 @@ root.render(
       <context.Provider value={[stateContextProduct,stateContext]} >
         <App />
       </context.Provider>
-
     </BrowserRouter>
   </React.StrictMode>
 );

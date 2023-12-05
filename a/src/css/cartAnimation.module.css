@@ -1,0 +1,91 @@
+.cartAnimation {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    border: 0.2px groove;
+    padding: 50px 50px 0px 50px;
+    height: 100%;
+}
+
+.cartAnimation__title {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cartAnimation__title img {
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+.cartAnimation__title h4 {
+    .cartAnimation__title img {
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+}
+
+/* San pham trong cart */
+
+.cartProducts_item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.3;
+}
+
+.checkout {
+    margin-top: 100px;
+}
+
+.checkout button {
+    border-radius: 20px;
+    background-color: #222;
+    min-width: 145px;
+    height: 40px;
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 5px;
+}
+
+/* animation */
+
+.input_CartAnimation,
+.inputClose_CartAnimation {
+    display: none;
+}
+
+.cartAnimation {
+    display: none;
+}
+
+.input_CartAnimation:checked+.inputClose_CartAnimation+.cartAnimation {
+    animation: cartAnimation ease 0.5s;
+    display: block;
+    background-color: #fff;
+}
+
+.inputClose_CartAnimation:checked+.cartAnimation {
+    transform: translateX(100%);
+}
+
+
+@keyframes cartAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

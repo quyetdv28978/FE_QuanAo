@@ -8,7 +8,7 @@ import Header from '../../Include/header.js'
 
 import up from "../../images/up.png"
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Home() {
     const [check, setCheck] = useState(false);
@@ -21,6 +21,11 @@ function Home() {
             setCheck(false);
         }
     })
+
+    useEffect(() => {
+        setQuality(sessionStorage.length)
+    }, [])
+
     return (
         <div className={clsx(headerCss.wrapperContens)}>
             <Header value={quality2}></Header>

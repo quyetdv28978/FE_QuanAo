@@ -13,7 +13,6 @@ import context from '../../context/context';
 function Content({ value }) {
     
     const [open, setOpen] = useContext(context)[1]()
-    // console.log(a[1]);
     return (
         <div className={clsx(contentCss.content)}>
             <div className={clsx(contentCss.content_header)}>

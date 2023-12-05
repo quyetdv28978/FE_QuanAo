@@ -1,21 +1,17 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 
-import meo from '../../images/te.jpg';
 import clsx from "clsx";
 import contentCss from "../../css/include/content.module.css"
 
-import { endPoint } from "../../Include/const.js"
+import ProductAPI from "../../APi/product/product";
+import { domain } from "../../APi/const/API";
 
 function Products({ test }) {
     const [product, setProduct] = useState([]);
     const [open, setOpen] = test
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then(value => value.json())
-            .then(value => {
-                setProduct(value);
-            })
+        ProductAPI(4, 0, setProduct);
     }, [])
 
     return (
@@ -23,10 +19,10 @@ function Products({ test }) {
             if (index < 4) {
                 return (
                     <div className={clsx(contentCss.item)} key={index}>
-                        <img src={meo} alt='img'></img>
+                        <img src={domain + "images/" + value.image} alt='img'></img>
                         <div className={clsx(contentCss.itemDetail)}>
-                            <p >{value.name}</p>
-                            <p>{value.username}</p>
+                            <p>{value.giaBan}</p>
+                            <p >{value.tenSP}</p>
                         </div>
                         <div className={clsx(contentCss.quickView)}>
                             <button className={clsx(contentCss.btQV)} onClick={e => setOpen({check:true, product:value})}>Mua ngay</button>

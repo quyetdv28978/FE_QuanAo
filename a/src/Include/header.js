@@ -3,19 +3,18 @@ import clsx from "clsx"
 import headerCss from "../css/include/header.module.css"
 import MobileNavbar from "../Component/home/mobileNav.js"
 import CartAnimation from '../Component/cartAnimation'
+import cartAnimationCss from '../css/cartAnimation.module.css'
 
 import iconUser from "../images/userIcon.png"
 import iconCart from "../images/iconCart.png"
 import navbar from "../images/navbar.png"
 import meo from '../images/images.jpg';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // Handle select icon accout
 
 function Header({ value }) {
     const [valueSelect, setValueSelect] = useState("");
-    console.log("co hien khong");
-    console.log(value);
 
     function handleIconAccout(e) {
         let locationU = window.location.href;
@@ -41,24 +40,22 @@ function Header({ value }) {
                             <option value={"/User"}>Tài khoản của tôi</option>
                             <option value={"/signin"}>Đăng xuất</option>
                         </select>
-                        {/* {valueSelect && <Link to={`${valueSelect}`}></Link>} */}
                     </span>
 
                     <label htmlFor='input_CartAnimation'
                         onClick={() => {
                             document.getElementById("inputClose_CartAnimation").checked = false
-                        }}
-                    >
+                        }}>
                         <img src={iconCart} alt='img'></img>
                         <b className={clsx(headerCss.iconCart)}>{value}</b>
                     </label>
-                    <input type='checkbox' id='input_CartAnimation' className='input_CartAnimation' ></input>
-                    <input type='checkbox' id='inputClose_CartAnimation' className='inputClose_CartAnimation'></input>
+                    <input type='checkbox' id='input_CartAnimation' className={clsx(cartAnimationCss.input_CartAnimation)}></input>
+                    <input type='checkbox' id='inputClose_CartAnimation' className={clsx(cartAnimationCss.inputClose_CartAnimation)}></input>
                     <CartAnimation></CartAnimation>
-
                 </div>
                 <label htmlFor='checkbox' className={clsx(headerCss.navbarMobile_show)}>
-                    <img src={navbar} alt='img'></img></label>
+                    <img src={navbar} alt='img'></img>
+                    </label>
             </div>
             <input id='checkbox' type='checkbox' style={{ display: "none" }} className={clsx(headerCss.inputCheck)}></input>
             {/* Mobile */}
@@ -67,7 +64,6 @@ function Header({ value }) {
                     <MobileNavbar></MobileNavbar>
                 </div>
             </div>
-
         </div>
     )
 }

@@ -1,18 +1,21 @@
-html{
-    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 
-}
-body{
+.bgSignin{
+    width: 1510px;
+    height: 710px;
     background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    position: relative;
+    /* left: 5px; */
 }
 .signin {
-    height: 50%;
+    margin-top: 100px;
+    width: inherit;
+    height: 70%;
     border: 1px solid;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: rgb(42, 37, 37);
-    margin-top: 5%;
+    /* margin-top: 10%; */
 }
 
 .signin_google {
@@ -50,6 +53,11 @@ h1 {
         width: 30%;
         left: 35%;
     }
+}
+
+/* erros */
+.erros {
+    color: red;
 }
 
 

@@ -2,10 +2,18 @@
     background-image: none;
 } */
 
+.forgotCss {
+    width: 1510px;
+    height: 713px;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    position: relative;
+    left: 5px;
+}
+
 .forgot {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     text-align: center;
     margin-top: 10%;
 }

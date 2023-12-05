@@ -1,13 +1,17 @@
-body{
-    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 
+.signupCss {
+    width: 1510px;
+    height: 713px;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    position: relative;
+    left: 5px;
 }
 
 .signup{
     border: 1px solid;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     text-align: center;
     margin-top: 5%;
     padding-bottom: 5%;

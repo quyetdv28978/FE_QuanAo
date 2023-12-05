@@ -1,14 +1,21 @@
 .productDetail {
     display: flex;
     margin: 5% 0 2% 10%;
-    padding: 5% 0 1% 0;
+    padding: 4% 0 4% 0;
+    /* padding: 2%; */
     background-color: #fff;
     width: 80%;
+}
+
+.imgMain {
+    width: 400px;
+    height: 400px;
 }
 
 .imgDetail {
     display: flex;
     margin-right: 2%;
+    margin-left: 20px;
 }
 
 .imgDetail_title {

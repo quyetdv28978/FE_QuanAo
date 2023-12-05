@@ -6,29 +6,33 @@ import Home from './Component/home/Home';
 import Products from './Component/shops/shops.js';
 import Cart from './Component/Cart/Cart';
 import User from './Component/user/user';
-import ProductDetail from './Component/productDetail/productDetail.js';
-import { useContext } from 'react';
-import context from './context/context.js';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import Product from './Component_admin/content/product/product.js';
+import Quantri from './Component_admin/quantri.js';
 
 
 function App() {
   return (
     <div>
-      {/* <ProductDetail></ProductDetail> */}
+      <Quantri quyet = {<Product/>}></Quantri>
+      
+
       <Routes>
         {/* Dang nhap, dang ky */}
-        <Route path="/signup" element={<Signup/>}/>
-        <Route path="/signin" element={<Signin/>}/>
-        <Route path="/forgotPass" element={<Forgot/>}/>
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/forgotPass" element={<Forgot />} />
 
         {/* website user */}
-        <Route path="/Home" element={<Home/>}/>
-        <Route path="/Products" element={<Products/>}/>
-        <Route path="/Cart" element={<Cart/>}/>
-        <Route path="/User" element={<User/>}/>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Products" element={<Products />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/User" element={<User />} />
       </Routes>
     </div>
-
   );
 }
 

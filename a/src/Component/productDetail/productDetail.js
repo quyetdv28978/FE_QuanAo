@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react"
+import React, { useEffect, useLayoutEffect, useState } from "react"
 import clsx from "clsx"
 import swal from "sweetalert"
 
@@ -6,6 +6,7 @@ import productDetailCss from "../../css/productsDetail/productsDetail.module.css
 
 import meo from "../../images/te.jpg"
 import close from "../../images/close.png"
+import { domain } from "../../APi/const/API"
 
 // Product: 
 // Sản phẩm mua
@@ -42,6 +43,10 @@ function ProductDetail({ test, value }) {
     const [open, setOpen] = test
     const [quality, setQuality] = useState(1);
 
+    useEffect(() => {
+      console.log(open);
+    })
+
     useLayoutEffect(() => {
         if (quality < 1) {
             setQuality(1);
@@ -56,21 +61,20 @@ function ProductDetail({ test, value }) {
                         setOpen({ check: false, product: "" })
                         setQuality(1)
                     }}></img>
-
                     </label>
                 </div>
                 <div className={clsx(productDetailCss.imgDetail)}>
-                    <div className={clsx(productDetailCss.imgDetail_title)}>
+                    {/* <div className={clsx(productDetailCss.imgDetail_title)}>
                         <img src={meo} alt="img" className={clsx(productDetailCss.imgTitle)}></img>
                         <img src={meo} alt="img" className={clsx(productDetailCss.imgTitle)}></img>
                         <img src={meo} alt="img" className={clsx(productDetailCss.imgTitle)}></img>
-                    </div>
-                    <img src={meo} alt="img" className={clsx(productDetailCss.imgMain)}></img>
+                    </div> */}
+                    <img src={domain + 'images/' +open.product.image} alt="img" className={clsx(productDetailCss.imgMain)}></img>
                 </div>
 
                 <div className={clsx(productDetailCss.productContent)}>
-                    <h2>{open.product.name}</h2>
-                    <h2>{open.product.phone}</h2>
+                    <h2>{open.product.tenSP}</h2>
+                    <h2>{open.product.giaBan}</h2>
                     <h5>Chết thật tốn thời gian quá, dài quá đê ngủ ngủ ngủ ngủ ngủ ngủ ngủ ngủ ngủ....................................................
                         ...................................................................
                     </h5>
@@ -103,9 +107,9 @@ function ProductDetail({ test, value }) {
 
                     <div className={clsx(productDetailCss.detailInput)}>
                         <button className={clsx(productDetailCss.btIncre)} onClick={() => setQuality(quality + 1)}>Tang</button>
-                        <input type="number" value={quality} />
+                        <input type="number" readOnly value={quality} />
                         <button className={clsx(productDetailCss.btIncre)} onClick={() => setQuality(quality - 1)}>Giam</button>
-                        <p><button className={clsx(productDetailCss.btBuy)} onClick={() => clickMuaNgay(open.product.name, quality, value)}>Mua ngay</button></p>
+                        <p><button className={clsx(productDetailCss.btBuy)} onClick={() => clickMuaNgay(open.product.tenSP, quality, value)}>Mua ngay</button></p>
                     </div>
                 </div>
             </div>
